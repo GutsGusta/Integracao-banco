@@ -1,7 +1,7 @@
 <?php
 require_once 'crud.php';
 
-$idLivro = 67;
+$idMusica = 67;
 
 $dadosAtualizados = [
     'titulo' => 'Tux for Dummies',
@@ -12,10 +12,10 @@ $dadosAtualizados = [
     'categoria' => 'Informatica',
 ];
 
-$linhasAfetadas = update($pdo, 'livros', $dadosAtualizados, "id = $idLivro");    
+$linhasAfetadas = update($pdo, 'musicas', $dadosAtualizados, "id = $idMusica");    
 
 if ($linhasAfetadas > 0) {
-    echo 'Livro atualizado com sucesso!';
+    echo 'Música atualizada com sucesso!';
 } else {
-    echo 'Não foi possível atualizar o livro.';
+    echo 'Não foi possível atualizar a Música.';
 }

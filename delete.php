@@ -1,12 +1,12 @@
 <?php
 require_once 'crud.php';
 
-$idLivro = 674;
+$idMusica = 674;
 
-$deleted = delete($pdo, 'livros', "id = $idLivro");
+$deleted = delete($pdo, 'musicas', "id = $idMusica");
 
 if ($deleted) {
-    echo 'Livro excluido com sucesso.';
+    echo 'Música excluida com sucesso.';
 } else {
-    echo 'Não foi possível excluir o livro.';
+    echo 'Não foi possível excluir a Música.';
 }
