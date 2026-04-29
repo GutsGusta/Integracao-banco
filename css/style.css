@@ -73,6 +73,7 @@ table {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .formulario {
@@ -81,6 +82,7 @@ table {
     text-align: center;
     font-size: 20px;
     padding: 20px;
+    
 }
 
 .formulario input{
