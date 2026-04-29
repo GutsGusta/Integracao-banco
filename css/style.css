@@ -12,6 +12,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .titulo {
@@ -22,4 +23,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+table, tr, td, th {
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: red;
+}
+
+table {
+    width: 800px;
+    font-size: 25px;
 }
