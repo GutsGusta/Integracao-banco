@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header{
     background-color: rgb(20, 20, 20);
     color: red;
@@ -62,4 +66,35 @@ table {
     width: 800px;
     font-size: 25px;
     box-shadow: 0.5px 4px 8px black;
+}
+
+.pagina-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario {
+    border: solid 2px rgb(20, 20, 20);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.formulario input{
+    border-radius: 10px;
+    border: solid 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario button {
+    background-color: red;
+    border: solid 2px red;
+    font-size: 20px;
+    border-radius: 10px;
 }

@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cadastro de Músicas</title>
 </head>
 <body>
-    
+    <main class="pagina-cadastro">
+        <h2>Adicione uma Música</h2>
+        <form action="POST" class="formulario">
+            <p>Nome da Música</p>
+            <input type="text" name="nome_musica">
+            <p>Autor da Música</p>
+            <input type="text" name="autor">
+            <p>Álbum da Música</p>
+            <input type="text" name="album">
+            <p>Gênero da Música</p>
+            <input type="text" name="genero">
+            <p>Duração da Música</p>
+            <input type="time" name="tempo_musica">
+            <p>Data de Publicação</p>
+            <input type="date" name="data_publicacao"><br><br>
+            <button type="submit">Adicionar</button>
+        </form>
+    </main>
 </body>
 </html>
