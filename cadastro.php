@@ -1,5 +1,22 @@
 <?php
     require_once 'crud.php';
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+        $tempo = !empty($_POST['tempo_musica']) ? $_POST['tempo_musica'] : '00:00:00';
+
+        $novaMusica = [
+                'nome_musica' => $_POST['nome_musica'] ?? '',
+                'autor' => $_POST['autor'] ?? '',
+                'tempo_musica' => $_POST['tempo_musica'] ?? '',
+                'genero' => $_POST['genero'] ?? '',
+                'album' => $_POST['album'] ?? '',
+                'data_publicacao' => $_POST['data_publicacao'] ?? ''
+            ];
+
+            $idMusicaNova = create($pdo, 'playlist', $novaMusica);
+           echo 'Nova música inserida com ID: '. $idMusicaNova;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -14,25 +31,11 @@
 
     <?php
         require_once 'partials/header.php';
-
-        $novaMusica = [
-            'nome_musica' => $_POST['nome_musica'],
-            'autor' => $_POST['autor'],
-            'tempo_musica' => $_POST['tempo_musica'],
-            'genero' => $_POST['genero'],
-            'album' => $_POST['album'],
-            'data_publicacao' => $_POST['data_publicacao']
-        ];
-
-        $idMusicaNova = create($pdo, 'playlist', $novaMusica);
-        echo 'Nova música inserida com ID: '. $idMusicaNova;
     ?>
-
-
 
     <main class="pagina-cadastro">
         <h2>Adicione uma Música</h2>
-        <form action="index.php" method="POST" class="formulario">
+        <form action="cadastro.php" method="POST" class="formulario-cadastro">
             <p>Nome da Música</p>
             <input type="text" name="nome_musica">
             <p>Autor da Música</p>
@@ -48,5 +51,7 @@
             <button type="submit" >Adicionar</button>
         </form>
     </main>
+
+    
 </body>
 </html>

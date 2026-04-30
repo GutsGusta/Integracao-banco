@@ -80,7 +80,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     
 }
 
-.formulario {
+.formulario-cadastro {
     border: solid 2px rgb(20, 20, 20);
     border-radius: 20px;
     text-align: center;
@@ -89,7 +89,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     
 }
 
-.formulario input{
+.formulario-cadastro input{
     border-radius: 10px;
     border: solid 2px black;
     font-family: Arial, Helvetica, sans-serif;
@@ -98,7 +98,33 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     margin-bottom: 10px;
 }
 
-.formulario button {
+.formulario-cadastro button {
+    background-color: red;
+    border: solid 2px red;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.formulario-editar {
+    border: solid 2px rgb(20, 20, 20);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
+.formulario-editar input{
+    border-radius: 10px;
+    border: solid 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario-editar button {
     background-color: red;
     border: solid 2px red;
     font-size: 20px;

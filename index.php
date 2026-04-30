@@ -30,7 +30,7 @@
                 </tr>';
 
 
-            $musicas = readAll($pdo, 'musicas');
+            $musicas = readAll($pdo, 'playlist');
 
             // print_r($livros);
 
@@ -40,7 +40,7 @@
 
             print '</table>';
 
-            $musica = read($pdo, 'musicas', 'id = 67');
+            $musica = read($pdo, 'playlist', 'id = 67');
 
             if ($musica) {
                 echo '<p>O livro em questão é: '.$musica['titulo'].'</p>';
