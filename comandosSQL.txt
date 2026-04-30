@@ -1,0 +1,13 @@
+SELECT CURRENT_USER;
+
+USE musicas;
+
+CREATE TABLE playlist(
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome_musica VARCHAR(100) NOT NULL,
+tempo_musica TIME NOT NULL,
+autor VARCHAR(100) NOT NULL,
+genero VARCHAR(50) NOT NULL,
+album VARCHAR(100),
+data_publicacao DATE
+);
