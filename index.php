@@ -8,7 +8,9 @@
     <title>Home</title>
 </head>
 <body>
-
+    <?php
+        require_once 'partials/header.php';
+    ?>
 
     <main>
         <table>

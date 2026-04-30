@@ -7,9 +7,14 @@
     <title>Cadastro de Músicas</title>
 </head>
 <body>
+
+    <?php
+        require_once 'partials/header.php';
+    ?>
+    
     <main class="pagina-cadastro">
         <h2>Adicione uma Música</h2>
-        <form action="POST" class="formulario">
+        <form action="index.php" method="POST" class="formulario">
             <p>Nome da Música</p>
             <input type="text" name="nome_musica">
             <p>Autor da Música</p>
@@ -22,7 +27,7 @@
             <input type="time" step="1" name="tempo_musica">
             <p>Data de Publicação</p>
             <input type="date" name="data_publicacao"><br><br>
-            <button type="submit">Adicionar</button>
+            <button type="submit" >Adicionar</button>
         </form>
     </main>
 </body>
