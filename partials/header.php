@@ -6,5 +6,5 @@
         <a href="index.php" class="botao-nav">Home</a>
         <a href="cadastro.php" class="botao-nav">Adicionar Música</a>
         <a href="editar.php" class="botao-nav">Editar Música</a>
-        <a href="#" class="botao-nav">Excluir Música</a>
+        <a href="deletar.php" class="botao-nav">Excluir Música</a>
     </div>

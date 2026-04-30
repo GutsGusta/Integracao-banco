@@ -19,11 +19,7 @@
 
             $linhasAfetadas = update($pdo, 'playlist', $dadosAtualizados, "id = $idMusica");    
 
-            if ($linhasAfetadas > 0) {
-                echo 'Música atualizada com sucesso!';
-            } else {
-                echo 'Não foi possível atualizar a Música.';
-            }
+            
         }
     }    
 ?>
@@ -59,5 +55,12 @@
         <button type="submit">Salvar Alterações</button>
     </form>
 
+    <?php
+        if ($linhasAfetadas > 0) {
+                    echo 'Música atualizada com sucesso!';
+                } else {
+                    echo 'Não foi possível atualizar a Música.';
+                }
+    ?>        
 </body>
 </html>
