@@ -3,7 +3,7 @@
     </header>
 
     <div class="botoes-nav">
-        <a href="cadastro.html" class="botao-nav">Adicionar Música</a>
+        <a href="cadastro.php" class="botao-nav">Adicionar Música</a>
         <a href="#" class="botao-nav">Editar Música</a>
         <a href="#" class="botao-nav">Excluir Música</a>
     </div>

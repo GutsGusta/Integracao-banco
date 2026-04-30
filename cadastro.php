@@ -1,3 +1,7 @@
+<?php
+    require_once 'crud.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,8 +14,22 @@
 
     <?php
         require_once 'partials/header.php';
+
+        $novaMusica = [
+            'nome_musica' => $_POST['nome_musica'],
+            'autor' => $_POST['autor'],
+            'tempo_musica' => $_POST['tempo_musica'],
+            'genero' => $_POST['genero'],
+            'album' => $_POST['album'],
+            'data_publicacao' => $_POST['data_publicacao']
+        ];
+
+        $idMusicaNova = create($pdo, 'playlist', $novaMusica);
+        echo 'Nova música inserida com ID: '. $idMusicaNova;
     ?>
-    
+
+
+
     <main class="pagina-cadastro">
         <h2>Adicione uma Música</h2>
         <form action="index.php" method="POST" class="formulario">

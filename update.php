@@ -4,12 +4,13 @@ require_once 'crud.php';
 $idMusica = 67;
 
 $dadosAtualizados = [
-    'titulo' => 'Tux for Dummies',
-    'isbn' => 9781118008188,
+    'nome_musica' => 'Tux for Dummies',
+    'id' => 9781118008188,
     'autor' => 'John Lennon',
-    'preco' => 299.99,
-    'situacao' => 'Disponivel',
-    'categoria' => 'Informatica',
+    'tempo_musica' => 0:05:59,
+    'genero' => 'Disponivel',
+    'album' => 'Informatica',
+    'data_publicacao' => '2023-05-18'
 ];
 
 $linhasAfetadas = update($pdo, 'musicas', $dadosAtualizados, "id = $idMusica");    
